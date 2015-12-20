@@ -65,10 +65,10 @@ An emote-oriented language.
 * 😱 - pop C, N, and set the Nth command to C
 * 😶 - pop N, push the character code of the Nth command
 * 😻 - pop N, push N%2
-* 🙀 - 
-* 😨 - 
-* 😭 - 
-* 😲 - 
+* 🙀 - pushes a random number in [0,1)
+* 😨 - pop N and output as a number
+* 😭 - begin quote string
+* 😲 - end quote string
 * 😷 - 
 * 😼 - 
 * 👣 - 

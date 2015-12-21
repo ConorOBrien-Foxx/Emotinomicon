@@ -6,6 +6,7 @@
 	<link rel="STYLESHEET" href="emotinomicon.css">
 	<script src="https://rawgit.com/mathiasbynens/utf8.js/master/utf8.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.5.0/math.min.js"></script>
+	<script src="https://rawgit.com/ConorOBrien-Foxx/Emotinomicon/master/emotinomicon.js"></script>
 </head>
 <body>
 	<h1>Emotin<span id="rot">🌑</span>micon</h1>

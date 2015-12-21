@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>emotinomicon</title>
+	<meta charset="UTF-8">
+	<link rel="STYLESHEET" href="emotinomicon.css">
+	<script src="https://rawgit.com/mathiasbynens/utf8.js/master/utf8.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.5.0/math.min.js"></script>
+</head>
+<body>
+	<h1>Emotin<span id="rot">🌑</span>micon</h1>
+	<aside id="left">
+		Bytes: <span id="byteCnt"></span> / chars: <span id="charCnt"></span>
+		<textarea spellcheck="false" id="code">😭!dlroW ,olleH😲⏪⏬⏩</textarea><button id="sub">submit</button><button id="gen">generate explanation</button>
+		<hr><div id="output"></div><hr>
+		<button class="small important emoji">useful</button><button class="small io emoji">i/o</button><button class="small man emoji">stack manipulation</button><button class="small op emoji">operator</button><button class="small data emoji">data</button><button class="small ctl emoji">control flow</button><button class="small emoji">unnasigned/uncategorized</button><div id="emotes"></div>
+	</aside>
+	<aside id="right"><h2>explanation</h2><div id="explanation"></div></aside>
+	<div id="expl"></div>
+	<script src="emotinomicon.js" type="text/javascript"></script>
+</body>

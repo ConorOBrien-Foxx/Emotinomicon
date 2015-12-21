@@ -1,0 +1,105 @@
+html { font-family: Gadugi, Constantia, Arial, sans-serif; }
+textarea { width: 100%; font-family: inherit; }
+.large { font-size: 50px; }
+table { border-collapse: collapse; }
+th { font-family: Consolas, monospace; }
+td { text-align: center; min-width: 1.5em; min-height: 1.5em; font-size: 16px; font-family: Consolas, monospace; }
+td:last-child, th:last-child { font-family: Gadugi, Constantia, Arial, sans-serif; text-align: left; }
+#output, td, th { white-space: pre; }
+td, th { padding: 3px; }
+
+button {
+	cursor: pointer;
+}
+button.emoji.small {
+	font-size: 12px;
+}
+.emoji {
+	font-size: 16px;
+	min-width: 2.25em;
+	height: 2.25em;
+	background: rgb(90,90,90);
+	border: 0.5px solid rgb(30,30,30);
+	margin: 1px;
+}
+.emoji.unassigned {
+	cursor: not-allowed;
+}
+button.emoji:hover {
+	background: rgb(120,120,120);
+	border: 0.5px solid rgb(70,70,70);
+}
+.emoji.important {
+	background: rgb(255,90,90);
+	border: 0.5px solid rgb(200,30,30);
+	margin: 1px;
+}
+button.emoji.important:hover {
+	background: rgb(255,120,120);
+	border: 0.5px solid rgb(200,70,70);
+}
+.emoji.io {
+	background: rgb(90,255,90);
+	border: 0.5px solid rgb(30,200,30);
+	margin: 1px;
+}
+button.emoji.io:hover {
+	background: rgb(120,255,120);
+	border: 0.5px solid rgb(70,200,70);
+}
+.emoji.man {
+	background: rgb(90,90,255);
+	border: 0.5px solid rgb(30,30,200);
+	margin: 1px;
+}
+button.emoji.man:hover {
+	background: rgb(120,120,255);
+	border: 0.5px solid rgb(70,70,200);
+}
+.emoji.op {
+	background: rgb(90,200,200);
+	border: 0.5px solid rgb(30,160,160);
+	margin: 1px;
+}
+button.emoji.op:hover {
+	background: rgb(120,220,220);
+	border: 0.5px solid rgb(70,200,200);
+}
+.emoji.data {
+	background: rgb(200,200,200);
+	border: 0.5px solid rgb(160,160,160);
+	margin: 1px;
+}
+button.emoji.data:hover {
+	background: rgb(220,220,220);
+	border: 0.5px solid rgb(200,200,200);
+}
+.emoji.ctl {
+	background: rgb(200,90,200);
+	border: 0.5px solid rgb(160,30,160);
+	margin: 1px;
+}
+button.emoji.ctl:hover {
+	background: rgb(220,120,220);
+	border: 0.5px solid rgb(200,70,200);
+}
+#output {
+	min-height: 1em;
+}
+#left {
+	width: 40%;
+	min-width: 300px;
+	float: left;
+}
+#right {
+	max-width: 50%;
+	width: 300px;
+	float: left;
+	position: relative;
+	padding: 20px;
+	top: -69px;
+}
+#expl {
+	float: left;
+	clear: left;
+}

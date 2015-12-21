@@ -93,9 +93,9 @@ function Emotinomicon(code){
 				case 48:stack.push(Math.pow(4,stack.pop()));break;
 				case 49:stack.push(fibonacci(stack.pop()));break;
 				case 50:stack.push(lucas(stack.pop()));break;
-				case 51:stack.push(Math.PI);break;
-				case 52:stack.push(Math.E);break;
-				case 53:stack.push(.5+Math.sqrt(5)/2);break;
+				case 51:stack.push(math.pi);break;
+				case 52:stack.push(math.e);break;
+				case 53:stack.push(math.phi);break;
 				case 54:stack.push(Math.log(stack.push()));break;
 				case 55:stack.push(Math.log10(stack.push()));break;
 				case 56:stack.push(Math.exp(stack.push()));break;

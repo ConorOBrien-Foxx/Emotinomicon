@@ -50,7 +50,7 @@ function Emotinomicon(code){
 				case 13:var b=stack.pop(),a=stack.pop();stack.push(math.subtract(a,b));break;
 				case 14:var b=stack.pop(),a=stack.pop();stack.push(math.divide(a,b));break;
 				case 15:var b=stack.pop(),a=stack.pop();stack.push(math.multiply(a,b));break;
-				case 16:var inpu=prompt().split("");inpu.forEach(function(e){stack.push(math.bignumber(e.charCodeAt()))});break;
+				case 16:var inpu=prompt().split("");if(inpu.length==0)stack.push(-1);else inpu.forEach(function(e){stack.push(math.bignumber(e.charCodeAt()))});break;
 				case 17:document.getElementById("output").innerHTML+=String.fromCharCode(Number(stack.pop().valueOf())).replace(/\n/g,"<br>");break;
 				case 19:
 					if(stack[stack.length-1]){
@@ -108,7 +108,7 @@ function Emotinomicon(code){
 				case 63:document.getElementById("output").innerHTML+=stack.pop();break;
 				case 64:stringMode=true;break;
 				case 66:document.getElementById("output").innerHTML="";break;
-				case 67:var inpu=prompt();stack.push(math.bignumber(inpu));break;
+				case 67:try{var inpu=prompt();stack.push(math.bignumber(inpu))}catch(e){stack.push(-1);};break;
 				case 93:stack.push(math.eval("i"));break;
 				case 96:stack.push(factorial(stack.pop()));break;
 				case 98:var B=stack.pop(),A=stack.pop(),N=stack.pop();stack.push(N?A:B);break;

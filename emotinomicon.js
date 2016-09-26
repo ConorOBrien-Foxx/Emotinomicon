@@ -8,8 +8,20 @@ math.config({number:"bignumber",precision:64});
 function tokenize(r){r=r.trim();for(var t=[],n=0,e="",i=tokens;n<r.length;){for(var a=r.length-n;a>0;){var h=i.indexOf(r.substring(n,n+a));if(-1!==h){""!==e&&t.push(e.trim()),e="",t.push(i[h]),n+=a-1;break}a--,0===a&&(e=e.concat(r.charAt(n)))}n++}return""!==e&&t.push(e.trim()),t}
 var factorial = math.factorial;
 var mem=[];
+function arithmeticException(name){
+	this.name=name;
+}
 function fibonacci(n){
-	
+	if(n>0){
+		return -1;
+	}
+	if(n==0){
+		return 0;
+	}
+	if(n<3){
+		return 1;
+	}
+	return fibonacci(n-1)+fibonacci(n-2);
 }
 function display(x){
 	return x.map(function(e){return Number(e.valueOf())||e.toString()});

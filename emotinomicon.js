@@ -18,7 +18,7 @@ var doOutput = function(x) {
         document.getElementById("output").innerHTML += x;
     }
     else {
-        process.stdout.write(x);
+        process.stdout.write(x+"");
     }
 }
 
@@ -38,7 +38,7 @@ math.config({
 function tokenize(r) {
     r = r.trim();
     for (var t = [], n = 0, e = "", i = tokens; n < r.length;) {
-        for (var a = r.length - n; a > 0;) {
+        for (var a = 2; a > 0;) {
             var h = i.indexOf(r.substring(n, n + a));
             if (-1 !== h) {
                 "" !== e && t.push(e.trim()), e = "", t.push(i[h]), n += a - 1;
